@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-import ColorPicker from "../colorPicker";
-import s from "./styles.module.css";
+import PaletteForm from "../paletteForm";
+import styles from "./styles.module.css";
 
 // this is just an example
 // feel free to use class based components and whatever paradigms you're most comfortable with
@@ -39,8 +39,8 @@ const Welcome = () => {
   if (!greeting) return null;
 
   return (
-    <div className={s.welcomeContainer}>
-		<ColorPicker />
+    <div className={styles.welcomeContainer}>
+		<PaletteForm />
     </div>
   );
 };
