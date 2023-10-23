@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
+import ColorPicker from "../colorPicker";
 import s from "./styles.module.css";
 
 // this is just an example
@@ -39,18 +40,7 @@ const Welcome = () => {
 
   return (
     <div className={s.welcomeContainer}>
-      <h1 className={s.welcome}>{greeting.body}</h1>
-      <div className={s.form}>
-        <input
-          className={s.input}
-          value={value}
-          onChange={(ev) => setValue(ev.target.value)}
-          placeholder="Enter a new greeting"
-        />
-        <button className={s.button} onClick={updateGreeting} disabled={!value}>
-          Update
-        </button>
-      </div>
+		<ColorPicker />
     </div>
   );
 };
