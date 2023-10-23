@@ -1,0 +1,18 @@
+.palette {
+	border: 1px solid;
+	padding: 4px;
+	border-radius: 4px;
+}
+
+.palette:hover {
+	background-color: azure;
+}
+
+.swatchList {
+	display: flex;
+	flex-direction: row;
+}
+
+.swatchList > * {
+	margin: 0 4px;
+}

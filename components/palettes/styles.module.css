@@ -1,0 +1,14 @@
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list > * {
+	margin: 8px 0;
+}
+
+.newLink {
+	border: 1px solid green;
+	padding: 4px;
+	border-radius: 4px;
+}
